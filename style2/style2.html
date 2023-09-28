@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project2 Style 1</title>
+    <title>Project2 Style2</title>
     <style>
-        /*Stylesheet 1*/
+        /*Stylesheet 4*/
         body {
-            font: 100% Lucida Sans, Verdana;
+            font: 100% Courier New;
             margin: 20px;
             line-height: 26px;
+            background-color: black;
         }
 
         .container {
@@ -21,100 +22,73 @@
             overflow: auto;
         }
 
-        #top, #sidebar, #bottom, .menuitem {
-            border-radius: 4px;
-            margin: 4px;
-        }
-
         #top {
-            background-color: #04AA6D;
-            color: white;
+            color: #84c754;
             padding: 15px;
-        }
-
-        #menubar {
-            width: 200px;
-            float: left;
         }
 
         #main {
             padding: 10px;
-            margin: 0 210px;
+            color: #84c754;
         }
 
         #sidebar {
-            background-color: #32a4e7;
             color: white;
+            border: 1px solid white;
+            border-radius: 4px;
             padding: 10px;
-            width: 180px;
-            bottom: 0;
+            width: 320px;
             top: 0;
             right: 0;
             position: absolute;
+            font-size: 80%;
+            line-height: 20px;
         }
 
         #bottom {
-            border: 1px solid #d4d4d4;
-            background-color: #f1f1f1;
+            border: 1px solid #ffffff;
+            border-radius: 4px;
+            color: white;
             text-align: center;
             padding: 10px;
             font-size: 70%;
             line-height: 14px;
         }
-        #top h1, #top p, #menulist {
+
+        #top h1,#top p {
             margin: 0;
-            padding: 0;
         }
 
         .menuitem {
-            background-color: #f1f1f1;
-            border: 1px solid #d4d4d4;
-            list-style-type: none;
-            padding: 2px;
+            color: #84c754;
             cursor: pointer;
         }
 
-        .menuitem:hover {
-            background-color: white;
+        .menuitem:nth-child(4) {
+            color:white;
+            font-weight:bold;
         }
 
-        .menuitem:first-child {
-            background-color: #04AA6D;
+        .menuitem:hover {
             color: white;
-            font-weight: bold;
         }
 
         a {
-            color: black;
-            text-decoration: underline;
+            color: white;
         }
 
         a:hover {
-            text-decoration: none;
+            color: #84c754;
         }
-
-        @media (max-width: 800px) {
-            #sidebar {
-                width: auto;
-                position: relative;
-            }
-            #main {
-                margin-right: 0;
-            }
-        }
-
         @media (max-width: 600px) {
-            #menubar {
-                width: auto;
-                float: none;
-            }
-            #main {
-                margin: 0;
-            }
+            #sidebar {
+            width: auto;
+            margin-bottom:10px;        
+            position: relative;
+            }    
         }
 
     </style>
-    
 </head>
 <body>
     <div class="container wrapper">
